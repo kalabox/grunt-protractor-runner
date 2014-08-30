@@ -29,7 +29,7 @@
     "test": "node test/runtest.js"
   },
   "dependencies": {
-    "protractor": "^1.0.0"
+    "protractor": "https://github.com/kalabox/protractor/tarball/master"
   },
   "devDependencies": {
     "nexpect": "~0.4.0",
