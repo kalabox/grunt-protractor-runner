@@ -1,5 +1,7 @@
 # grunt-protractor-runner
 
+**This is a forker version for Kalabox2** 
+
 > A Grunt plugin for running [Protractor](https://github.com/angular/protractor) runner.
 
 ## Getting Started
