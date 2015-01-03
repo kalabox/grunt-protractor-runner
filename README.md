@@ -18,7 +18,11 @@ Once the plugin has been installed, it may be enabled inside your Gruntfile with
 grunt.loadNpmTasks('grunt-protractor-runner');
 ```
 
-If you want to use standalone selenium server, run `./node_modules/protractor/bin/webdriver-manager update` to install/update the selenium server for local installed protractor.
+Finally you need a Selenium server. If you don't have one set up already, you can install a local standalone version with this command:
+
+```shell
+./node_modules/grunt-protractor-runner/node_modules/protractor/bin/webdriver-manager update
+```
 
 ## The "protractor" task
 
@@ -29,7 +33,7 @@ In your project's Gruntfile, add a section named `protractor` to the data object
 grunt.initConfig({
   protractor: {
     options: {
-      configFile: "node_modules/protractor/referenceConf.js", // Default config file
+      configFile: "node_modules/protractor/example/conf.js", // Default config file
       keepAlive: true, // If false, the grunt process stops when the test fails.
       noColor: false, // If true, protractor will not use colors in its output.
       args: {
